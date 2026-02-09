@@ -1,5 +1,5 @@
 # IMDB Movie Reviews Sentiment Analysis
-#Task_1
+# Task_1
 ## 📊 Project Overview
 This project performs sentiment analysis on 50,000 IMDB movie reviews using machine learning techniques to classify reviews as positive or negative.
 
@@ -22,11 +22,11 @@ This project performs sentiment analysis on 50,000 IMDB movie reviews using mach
 
 Python 3.8+
 
-#Task_2
-📰 News Category Classification with AG News Dataset
+# Task_2
+# 📰 News Category Classification with AG News Dataset
 A comprehensive machine learning project for classifying news articles into categories using various NLP techniques and classification algorithms.
 
-📋 Project Overview
+## 📋 Project Overview
 This project implements a multiclass text classification system to categorize news articles into four categories: World, Sports, Business, and Sci/Tech. The solution includes complete text preprocessing, feature engineering, multiple classification models, and visualization components.
 
 🚀 Features
