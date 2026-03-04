@@ -1,74 +1,103 @@
-# IMDB Movie Reviews Sentiment Analysis
-# Task_1
-## 📊 Project Overview
+Elevvo NLP Internship Projects
+
+📚 Table of Contents
+
+1. Contact Information
+2. Task 1: IMDB Sentiment Analysis
+3. Task 2: News Category Classification
+4. Task 3: BBC News Topic Modeling
+5. Task 4: Resume Screening Using NLP
+
+---
+
+Contact Information
+
+👤 Tahir Mahmood
+
+Method Details
+📧 Email tahirdool67@gmail.com
+📱 Phone +92 319 2429525
+🔗 LinkedIn linkedin.com/in/tahir-mahmood-781b93329
+💻 GitHub github.com/Tahir-MD/Elevo_NLP_Intership
+📍 Location Pakistan
+
+🌐 Social Profiles
+
+https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
+https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
+
+📱 Quick Connect
+
+Feel free to reach out for:
+
+· 🤝 Collaboration opportunities
+· 💼 Job opportunities
+· ❓ Questions about projects
+· 📚 Knowledge sharing
+· 🔬 Research discussions
+
+---
+
+Task 1: IMDB Movie Reviews Sentiment Analysis
+
+📊 Project Overview
+
 This project performs sentiment analysis on 50,000 IMDB movie reviews using machine learning techniques to classify reviews as positive or negative.
 
-## 🎯 Features
-- Text preprocessing and cleaning
-- TF-IDF vectorization
-- Two classification models: Logistic Regression and Naive Bayes
-- Model performance comparison
-- Data visualization (Word Clouds, Top Words)
+🎯 Features
 
-## 📈 Results
-| Model | Accuracy | Precision | Recall | F1-Score |
-|-------|----------|-----------|--------|----------|
-| Logistic Regression | 88.54% | 0.89 | 0.89 | 0.89 |
-| Naive Bayes | 84.89% | 0.85 | 0.85 | 0.85 |
+· Text preprocessing and cleaning
+· TF-IDF vectorization
+· Two classification models: Logistic Regression and Naive Bayes
+· Model performance comparison
+· Data visualization (Word Clouds, Top Words)
 
-## 🛠️ Installation
+📈 Results
 
-### Prerequisites
+Model Accuracy Precision Recall F1-Score
+Logistic Regression 88.54% 0.89 0.89 0.89
+Naive Bayes 84.89% 0.85 0.85 0.85
+
+🛠️ Installation
+
+Prerequisites
 
 Python 3.8+
 
-# Task_2
-# 📰 News Category Classification with AG News Dataset
-A comprehensive machine learning project for classifying news articles into categories using various NLP techniques and classification algorithms.
+---
 
-## 📋 Project Overview
-This project implements a multiclass text classification system to categorize news articles into four categories: World, Sports, Business, and Sci/Tech. The solution includes complete text preprocessing, feature engineering, multiple classification models, and visualization components.
+Task 2: News Category Classification with AG News Dataset
+
+📋 Project Overview
+
+A comprehensive machine learning project for classifying news articles into categories using various NLP techniques and classification algorithms. This project implements a multiclass text classification system to categorize news articles into four categories: World, Sports, Business, and Sci/Tech.
 
 🚀 Features
-Complete Text Preprocessing Pipeline: Tokenization, stopword removal, lemmatization, and text cleaning
 
-Multiple ML Models: Logistic Regression, Random Forest, SVM, and Neural Network
-
-Advanced Feature Engineering: TF-IDF vectorization with n-grams
-
-Comprehensive Visualizations: Word clouds, frequency plots, confusion matrices
-
-Model Comparison: Side-by-side performance evaluation
-
-Production-Ready Prediction Function: Deployable API for new article classification
+· Complete Text Preprocessing Pipeline: Tokenization, stopword removal, lemmatization, and text cleaning
+· Multiple ML Models: Logistic Regression, Random Forest, SVM, and Neural Network
+· Advanced Feature Engineering: TF-IDF vectorization with n-grams
+· Comprehensive Visualizations: Word clouds, frequency plots, confusion matrices
+· Model Comparison: Side-by-side performance evaluation
+· Production-Ready Prediction Function: Deployable API for new article classification
 
 📊 Dataset
-The project uses the AG News dataset, which contains:
 
-120,000 training samples
+· Source: AG News on Kaggle
+· Training Samples: 120,000
+· Testing Samples: 7,600
+· Categories: World, Sports, Business, Sci/Tech
 
-7,600 testing samples
+---
 
-4 categories: World, Sports, Business, Sci/Tech
+Task 3: BBC News Topic Modeling
 
-Each sample contains a title and description
-
-Dataset Source: AG News on Kaggle
-
-🛠️ Installation
-Prerequisites
-Python 3.7+
-
-pip package manager
-
-# Task 3 
-# BBC News Topic Modeling
-
-# 📌 Project Overview
+📌 Project Overview
 
 This project performs topic modeling on the BBC News dataset to discover hidden themes and topics in news articles. It implements and compares two popular topic modeling techniques: Latent Dirichlet Allocation (LDA) and Non-Negative Matrix Factorization (NMF).
 
-# 🎯 Objectives
+🎯 Objectives
 
 · Extract hidden topics from BBC news articles
 · Preprocess text data for NLP tasks
@@ -76,14 +105,14 @@ This project performs topic modeling on the BBC News dataset to discover hidden 
 · Compare performance of both techniques
 · Visualize topics using word clouds
 
-# 📂 Dataset
+📂 Dataset
 
 · Source: BBC News Dataset from Kaggle
 · Format: CSV file
 · Size: 6.38 MB
-· Content: News articles covering various categories including business, entertainment, politics, sport, and technology
+· Content: News articles covering business, entertainment, politics, sport, and technology
 
-# 🛠️ Technologies Used
+🛠️ Technologies Used
 
 Category Technologies
 Programming Python 3.x
@@ -92,65 +121,7 @@ NLP NLTK, Regex
 Machine Learning Scikit-learn (LDA, NMF, CountVectorizer)
 Visualization Matplotlib, WordCloud
 
-# 📋 Project Workflow
-
-1. Data Loading
-
-· Load BBC News dataset from CSV file
-· Explore data structure and columns
-· Combine relevant text columns
-
-2. Text Preprocessing
-
-· Convert text to lowercase
-· Remove special characters and numbers
-· Remove stopwords (common words like 'the', 'is', 'at')
-· Remove words with length less than 3 characters
-· Filter out empty or very short documents
-
-3. Feature Extraction
-
-· Convert preprocessed text to document-term matrix
-· Use CountVectorizer with parameters:
-  · max_df=0.9: Ignore words that appear in >90% of documents
-  · min_df=5: Ignore words that appear in <5 documents
-  · max_features=1000: Limit vocabulary size
-
-4. Topic Modeling
-
-Latent Dirichlet Allocation (LDA)
-
-· Probabilistic generative model
-· Assumes documents are mixtures of topics
-· Topics are distributions over words
-· Implemented with 5 topics
-
-Non-Negative Matrix Factorization (NMF)
-
-· Matrix factorization technique
-· Decomposes document-term matrix into two matrices
-· Non-negativity constraint ensures interpretability
-· Implemented with 5 topics
-
-5. Topic Interpretation
-
-· Extract top 10 words for each topic
-· Assign dominant topic to each document
-· Analyze topic distribution across documents
-
-6. Model Comparison
-
-· Compare LDA vs NMF results
-· Analyze differences in topic words
-· Evaluate topic coherence
-
-7. Visualization
-
-· Generate word clouds for each topic
-· Display top words with weights
-· Visualize topic distribution
-
-# 📊 Results
+📊 Results
 
 Sample LDA Topics
 
@@ -161,7 +132,7 @@ Topic 3 government, election, party, minister, political
 Topic 4 game, match, player, win, season
 Topic 5 technology, internet, mobile, software, digital
 
-## Sample NMF Topics
+Sample NMF Topics
 
 Topic Top Words
 Topic 1 mobile, phone, technology, users, devices
@@ -170,57 +141,113 @@ Topic 3 election, vote, party, minister, government
 Topic 4 film, award, actor, director, festival
 Topic 5 football, match, player, league, club
 
-# 🔍 Key Findings
+---
 
-· LDA tends to produce more balanced topic distributions
-· NMF often gives more sparse and focused topics
-· Both methods successfully identify distinct news categories
-· Topic words align well with BBC news categories
+Task 4: Resume Screening Using NLP (Industry Level)
 
-# 💻 How to Run
+📌 Project Overview
+
+This project implements an intelligent resume screening system that automatically matches candidates with job descriptions using Natural Language Processing (NLP) and semantic search techniques.
+
+🎯 Objectives
+
+· Automate the resume screening process using NLP
+· Match candidate resumes with job descriptions using semantic similarity
+· Extract and compare skills between resumes and job requirements
+· Rank candidates based on relevance scores
+· Provide interpretable match reports with matched and missing skills
+
+📂 Dataset
+
+· Job Descriptions: 4 sample job positions (Data Scientist, ML Engineer, Python Developer, Data Analyst)
+· Resumes: 5 sample candidate resumes with varying skill sets
+· Skills Database: 15+ common technical skills for extraction and matching
+
+🛠️ Technologies Used
+
+Category Technologies
+Programming Python 3.x
+NLP/Embeddings Sentence Transformers (all-MiniLM-L6-v2)
+Data Processing Pandas, NumPy, Regular Expressions
+Similarity Matching Cosine Similarity
+Document Processing PyPDF2, python-docx
+
+📊 Results
+
+Sample Similarity Matrix
+
+Candidate Data Scientist ML Engineer Python Developer Data Analyst
+John Smith 88.3% 72.1% 65.4% 58.7%
+Sarah Johnson 75.2% 92.5% 68.9% 45.3%
+Mike Chen 62.8% 58.4% 85.7% 51.2%
+Emily Brown 55.6% 48.9% 52.3% 79.8%
+
+Best Matches
+
+Rank Candidate Job Position Match Score Matched Skills
+1 Sarah Johnson ML Engineer 92.5% Python, TensorFlow, PyTorch, AWS
+2 John Smith Data Scientist 88.3% Python, ML, SQL, NLP
+3 Mike Chen Python Developer 85.7% Python, Django, Flask, Git
+
+🔍 Key Features
+
+Semantic Matching
+
+· Uses state-of-the-art sentence transformers
+· Captures contextual meaning beyond keyword matching
+· Handles synonyms and related terms effectively
+
+Skill Extraction
+
+```python
+# Example of extracted skills
+Candidate: Sarah Johnson
+Skills: ['Python', 'TensorFlow', 'PyTorch', 'AWS', 'Machine Learning']
+
+Job: Machine Learning Engineer
+Required: ['Python', 'TensorFlow', 'PyTorch', 'Deep Learning', 'MLOps', 'Cloud']
+Matched: ['Python', 'TensorFlow', 'PyTorch', 'Cloud']
+Missing: ['Deep Learning', 'MLOps']
+```
+
+💻 How to Run
 
 Prerequisites
 
 ```bash
-pip install pandas numpy scikit-learn nltk matplotlib wordcloud
+pip install pandas numpy sentence-transformers scikit-learn PyPDF2 python-docx
 ```
 
 Steps
 
-1. Download the BBC News dataset from Kaggle
-2. Place the CSV file in the project directory
-3. Run all cells in the Jupyter notebook
-4. View results and visualizations
+1. Clone the repository
+2. Install required dependencies
+3. Run the Jupyter notebook cell by cell
+4. View results and match reports
 
-## 📁 Project Structure
+---
+
+📁 Repository Structure
 
 ```
-bbc-news-topic-modeling/
+Elevo_NLP_Intership/
 │
-├── BBC News Topic Modeling.ipynb    # Main notebook
-├── BBC News Dataset.csv              # Dataset (to be downloaded)
-├── bbc_topics_results.csv            # Output results
-├── README.md                         # Project documentation
-└── requirements.txt                   # Dependencies
+├── Task_1_IMDB_Sentiment_Analysis.ipynb
+├── Task_2_News_Classification.ipynb
+├── Task_3_BBC_Topic_Modeling.ipynb
+├── Task_4_Resume_Screening.ipynb
+├── README.md
+└── requirements.txt
 ```
 
-# 🎓 Key Learning Outcomes
+🤝 Contributing
 
-· Text preprocessing techniques for NLP
-· Document-term matrix creation
-· LDA algorithm implementation
-· NMF algorithm implementation
-· Topic model evaluation and comparison
-· Results visualization techniques
+Contributions are welcome! Feel free to fork this repository and submit pull requests.
 
-# 🤝 Contributing
+📄 License
 
-Feel free to fork this project, submit issues, or suggest improvements. Contributions are welcome!
+This project is for educational purposes. All datasets belong to their respective owners.
 
-# 📄 License
+---
 
-This project is for educational purposes. The dataset belongs to its original authors.
-
-# 📧 Contact
-
-For questions or feedback, please reach out via GitHub.
+⭐ Star this repository if you find it helpful!
